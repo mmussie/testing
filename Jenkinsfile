@@ -12,9 +12,14 @@ pipeline {
         echo " testing one more app .."
       }
     }
-    stage("install") {
+    stage("Integration") {
       steps {
-        echo " installing the application .. "
+        echo " Integration with 3rd party application .. "
+      }
+    }
+    stage("Deployement") {
+      steps {
+        echo " installing the application ... "
       }
     }
   }
